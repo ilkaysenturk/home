@@ -5,3 +5,5 @@ print(time.strftime("%A"))
 
 time=dt.datetime(2020, 6 ,6)
 print(time)
+
+print(time.strftime("%B"))

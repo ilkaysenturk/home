@@ -6,6 +6,7 @@ class person:
 
     def my_funcion(self):
       print("class object presentation "+self.age)
+           print("hello world")
 
 p1=person("ilkay","43")
 p2=person("melis","12")
@@ -14,3 +15,4 @@ p4=person("serpil","45")
 
 class student(person):
     pass
+ 
