@@ -1,11 +1,4 @@
 import log
-import conf
+import read_csv
 
-#log.log_start('covid19')
-
-#log.log_append('ddsfsd')
-
-log.log_finish('covid19')
-
-
-print(conf.configurations["ExampleLogFileName"])
+read_csv.read_csv("oscar_age_female.csv")

@@ -2,6 +2,7 @@
 from pandas import DataFrame, read_csv
 import pandas as pd
 
+
 #This to visualize the populated/modified data
 import matplotlib.pyplot as plt
 
@@ -12,10 +13,11 @@ import os
 
 #only needed to determine Matplotlib version number
 import matplotlib as mt
+import conf
 
 #Enable inline plotting !!!This might not be needed though
 #matplotlib inline
-PathToSave=sys.path[0]+'\\'
+PathToSave=conf.configurations["PathCSVFile"]
 
 #Get the versions
 print('Python version ' + sys.version)
@@ -28,16 +30,16 @@ print('File Location '+PathToSave)
 #Stage data into lists
 cars=['ford','mercedes','nissan','bmw']
 years=[2000,2002,2004,2015]
-DataSet=list(zip(cars,years))
+DataSet=list(zip(cars,years)) #Merge to data list into one
 
 #Create the DataFrame
 df=pd.DataFrame(data=DataSet, columns=['Cars','Years'])
 
-FileNameToSave='example_cars.csv'
+FileNameToSave=conf.configurations["ExampleCSVFile"]
 FullPathWithFile=PathToSave+FileNameToSave
 
 df.to_csv(FullPathWithFile,index=False,header=False)
-if os.path.exists('C:\\Users\\ilkay_senturk\\git\\home\\data_twister\\example_cars.csv'):
+if os.path.exists(FullPathWithFile):
     print("File has been crreated in "+ FullPathWithFile)
 else:
     Print("File hasn't been created")
