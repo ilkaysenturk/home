@@ -1,24 +1,17 @@
 import log
-import read_csv
+import conf
+import view_csv
+import data_profiler
 
-df=read_csv.read_csv("oscar_age_female.csv")
+#print(conf.LogFolder)
 
-data_types=dict(df.dtypes)
+#('oscar_age_female.csv',r'C:\Users\ilkay_senturk\git\home\data_twister\data')
 
-car = {
-  "brand": "Ford",
-  "model": "Mustang",
-  "year": 1964
-}
+data_profiler.profile_csv_view('ecommerce_data.csv',r'C:\Users\ilkay_senturk\git\home\data_twister\data')
+#out=csv_file.read_csv()
 
-test_dict=dict(df.sum(numeric_only=True))
-total_rows=df.shape[0]
-total_cols=df.shape[1]
-columns=df.columns
-#print(car['bran'])
+#print(out)
+#out2=csv_file.file_size_csv()
 
-
-print(total_rows)
-print(total_cols)
-print(data_types)
-#print(test_dict)
+#out3=csv_file.sample_data(6,head=False)
+#csv_file.test()
