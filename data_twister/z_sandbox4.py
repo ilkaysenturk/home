@@ -1,18 +1,40 @@
 import pandas as pd
 import numpy as np
-data=[3.000938,11.370722,14.612143,8.990256,13.925283,12.056875,14.118931,8.247458,5.526727]
+import re
 
+data=[1,8,7,5,6,5,3,4,7,1]
 s=pd.Series(data)
-l=[]
-min_out=s.min()
-pct_out=s.quantile(q=0.25)
-std_out=s.std()
+prev_element=0
+lat_element=0
+result=[]
+x=len(s)-1
 
-l.append(min_out)
-l.append(std_out)
-l.append(pct_out)
+for i in range(len(s)):
+    if i==0:
+        prev_element=0
+    else:
+        prev_element=i-1
+        prev_element=s[prev_element]
+    if i==x:
+        lat_element=0
+    else:
+        lat_element=i+1
+        lat_element=s[lat_element]
+    element=s[i]
+    #print(element,prev_element,lat_element)
+    if int(element)>int(prev_element):
+        if int(element)>int(lat_element):
+            result.append(i)
+print(result)
+out=pd.Series(result)
+print(out)
 
-#mean=s.mean()
-#std=s.std()
 
-print(l)
+
+
+
+
+
+
+
+#(lambda c: sum([Counter(c.lower()).get(i, 0) for i in list('aeiou')]) >= 2)

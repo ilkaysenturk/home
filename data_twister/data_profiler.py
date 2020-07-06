@@ -3,7 +3,7 @@ import numpy as np
 import view_csv as wc
 import os
 import sys
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 from layout_objects import Insert
 
 #This Module Runs function profile_csv_view which accepts two arguments
@@ -24,7 +24,8 @@ def profile_csv_view(source_csv_file_name,source_csv_file_path):
         return
     # Get the column names of Data Frame
     columns_in_df=df.columns
-
+    #Get the maximim length of column names
+    max_length_of_column_name=columns_in_df.str.len().max()
     # Store the Data Frame Column Analyses Information in dictionaries
     dict_data_types_in_df=dict(df.dtypes)
     length_of_dict_data_types_in_df=len(dict_data_types_in_df)
@@ -55,11 +56,16 @@ def profile_csv_view(source_csv_file_name,source_csv_file_path):
     count=0
     for x,y in dict_data_types_in_df.items(): # Seperate the dictionary items into two
         if count==0:
+            tline=''
+            tcount=0
+            while tcount <= max_length_of_column_name:
+                tline=tline+'-'
+                tcount+=1
             # Add formatted header of the data frame output
-            print('Column Name  Data Type  Unique  %Unique  Nulls  %Null  Max Value  Min Value    Average    Std Dev    Sum')
-            print('-----------  ---------  ------  -------  -----  -----  ---------  -----------  ---------  ---------  ---------')
+            print('Column Name                          Data Type  Unique  %Unique  Nulls  %Null  Max Value  Min Value    Average    Std Dev    Sum')
+            print(tline,'--------- ------  -------  -----  -----  ---------  -----------  ---------  ---------  ---------')
         # Populate the x=colum and y=data type values
-        x_ljust=str(x).ljust(9,' ')
+        x_ljust=str(x).ljust(max_length_of_column_name,' ')
         y_ljust=str(y).ljust(10,' ')
         # Population of Column "Unique"
         dict_val_distinct_count_df=dict_distinct_count_df[x]
@@ -112,7 +118,7 @@ def profile_csv_view(source_csv_file_name,source_csv_file_path):
 
         # Print the footer
         if count==length_of_dict_data_types_in_df:
-            print('-----------  ---------  ------  -------  -----  -----  ---------  -----------  ---------  ---------  ---------')
+            print(tline,'---------  ------  -------  -----  -----  ---------  -----------  ---------  ---------  ---------')
 
     # Present top 5 records from data frame
 
