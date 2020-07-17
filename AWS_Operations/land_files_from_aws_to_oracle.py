@@ -60,7 +60,6 @@ try:
                   connection.commit()
                   #Loop through Buckets and files objects in S3
                   for bucket in s3.buckets.all():
-                      s3.Bucket(bucket)
                       for obj in bucket.objects.all():
                           #Get the size of the file in AWS S3 bucket
                           file_size_in_aws=s3.Object(bucket.name,obj.key).content_length
