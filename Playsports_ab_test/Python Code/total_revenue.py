@@ -19,3 +19,4 @@ print(df)
 #Show as graph
 df.plot.bar()
 plt.show()
+#
