@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "projecthousedashboard",
+  "private_key_id": "c8fce8f422c3babc1526a52f5af854a2a750cabb",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQC4ZGQO3yYZbkjU\n3HLvOt3k7sZWyixTXTaYGe7ldixHaloNuK4hQASJzf1UsrLqrfHKaDcNO04CxFF8\nJhyWO4TNW4ohInnpeGhEoJCf7h57T6jwN5djWORzFRRI3pyCU0TkC9p/UAjWz8gT\nETC+wcMYI3lEORSFaaL46XSDcISy4niYLx4fy/e87Sv2dw9cw1L/okbu/VYqXIB2\n60qU3WJGFZE+3qV/PwhhORTOeXa6pC7TWIVmLT+5qBMlVugKMFJsyC+DpwdLwmWu\n/MOI46IQfq4B5V4dA0ZVRL9D6EvD49sBMH1DdANfMeRLhruC1rKsKNeYjixezQle\nHR0SMjrhAgMBAAECggEAOSEZgyYONtjdhd3bWlWBxFlaaC9xdk6uCIgYZU2swF+q\nERBEGxcrkMqaj7BiEKXeARky3U2fiOnsWSuxtbYxGjMfY867uONOYtzgkjyDgy8W\nJ38Bz40OEr3YMA+QrCxCbulhRAq3Al8UHRw5XxDHcmYjP0j0G7W0AazLJaIp6wYK\nXtKxPEVGHSIjre9YT4g/zpy13a8iZQ3QFMSTFRQQhb7OBZOkmn+lI+H8ntHO5x5r\n8dQRfouYCWgcK2X7c1QWkHLvfIpaSJdi6eZt0935gPoSMt3pnFLXjy2wUKA1ReTw\nsv1CqflIjULoNzVwuB9UDzN3LlMrgVy0juRmkOsgRQKBgQDzCgEYUp0oWJTlvVap\nA1TiupseZ5ZyAqiiiqFdu10t7OX5MGfqbCMs+7WMLaruLJ9VoIVna/4+iKUE1XtY\nU/Vl/HVK11ihN+sHeMZJFqbaGDEY8yKBz5/KzPWFNv4vNNpUGl20Gum6SElpvGeJ\nGxlNVcLmyLJbHa9c5V9i66GORwKBgQDCObt+SA0nveguazd+e2ovevHYYGf8szEi\nt1C/dBuJakcisuxbzw/O/xl/D7LwR4zcHtDoG/vcQDPQurgI4X481N054fq5M3P5\nkr/OHrnu9CKgIMa2ZoXQm/L+tukarcwh5umCYCdO5RBgTu15EIGey/8bcPsmVlUC\nky4YFjq5lwKBgFub9sOzSDfQA/gBAWxdrB52VkgEpcm9xNDXznFlUX8hH6JpI5JS\nRoQLMOhwwlBak4iUJBTSuRfbK9CBo6espgBWQ+P8/hRu3nGHjb45ApWMrt0HsIcb\nutCXpygajX8/vdgbxBxCVL15x+pKMQCWLVhgLkINfmUn8FTkxKqlxNS7AoGAc1Tc\n5Qvb4/F84bOA7HZUg4U5/wagOQoe70JzjHxhraOSQiSE/a9i78PDXBPyaYPTPRJ/\ncpTLZeop2pRFm+Bqmay9ARYTT84h290sUDUmq6IEvZk45i7S3yD7lgz/Nnxlbuwz\nVNvL+6lBpC66DN2kWqs//QeF2yoAqNrE0EDC9lkCgYBBPxZAt5iIJjIFeO5doE5L\nvTIrAO3imdK/vM74DWR6gF/dCKxQG53mmp2Ml3bK1FRb3we5Vz+fbR8cMvfTnzJ9\nnvghMYDYztOD7IyyDQrwaMMBG4J+4GNfvMWzosG6e4Q57r5eZTGNjiy7yqbeVL/0\n2P1sjxZ1yei9JwxpGhrQsQ==\n-----END PRIVATE KEY-----\n",
+  "client_email": "my-service-account@projecthousedashboard.iam.gserviceaccount.com",
+  "client_id": "100064342097361811746",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/my-service-account%40projecthousedashboard.iam.gserviceaccount.com"
+}
